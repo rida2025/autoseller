@@ -13,6 +13,7 @@ void click()
 
     input.mi.dwFlags = MOUSEEVENTF_RIGHTUP;
     SendInput(1, &input, sizeof(INPUT));
+	Sleep(60);
 }
 
 int main() 
@@ -43,7 +44,7 @@ int main()
 		    	y = y + 80;
 		    }
     	}
-    	else if (GetAsyncKeyState(VK_F12))
+    	else if (GetAsyncKeyState(VK_F7))
     	{
     		break;
     	}
